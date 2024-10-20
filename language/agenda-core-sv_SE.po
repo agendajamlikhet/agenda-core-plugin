@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Agenda Core\n"
-"POT-Creation-Date: 2024-10-20 18:34+0200\n"
-"PO-Revision-Date: 2024-10-20 18:36+0200\n"
+"POT-Creation-Date: 2024-10-20 18:56+0200\n"
+"PO-Revision-Date: 2024-10-20 18:57+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sv_SE\n"
@@ -27,112 +27,112 @@ msgstr "Evenemanger"
 
 #: includes/cpt.php:7 includes/cpt.php:9 includes/cpt.php:35
 msgid "Event"
-msgstr ""
+msgstr "Evenemang"
 
 #: includes/cpt.php:10
 msgid "Event Archives"
-msgstr ""
+msgstr "Evenemangsarkiv"
 
 #: includes/cpt.php:11
 msgid "Event Attributes"
-msgstr ""
+msgstr "Evenemangsattribut"
 
 #: includes/cpt.php:12
 msgid "Parent Event:"
-msgstr ""
+msgstr "Föräldraevenemang:"
 
 #: includes/cpt.php:13
 msgid "All Events"
-msgstr ""
+msgstr "Alla evenemang"
 
 #: includes/cpt.php:14
 msgid "Add New Event"
-msgstr ""
+msgstr "Lägg till nytt evenemang"
 
 #: includes/cpt.php:15
 msgid "Add New"
-msgstr ""
+msgstr "Lägg till ny"
 
 #: includes/cpt.php:16
 msgid "New Event"
-msgstr ""
+msgstr "Nytt evenemang"
 
 #: includes/cpt.php:17
 msgid "Edit Event"
-msgstr ""
+msgstr "Redigera evenemang"
 
 #: includes/cpt.php:18
 msgid "Update Event"
-msgstr ""
+msgstr "Uppdatera evenemang"
 
 #: includes/cpt.php:19
 msgid "View Event"
-msgstr ""
+msgstr "Visa evenemang"
 
 #: includes/cpt.php:20
 msgid "View Events"
-msgstr ""
+msgstr "Visa evenemang"
 
 #: includes/cpt.php:21
 msgid "Search Event"
-msgstr ""
+msgstr "Sök evenemang"
 
 #: includes/cpt.php:22
 msgid "Not found"
-msgstr ""
+msgstr "Hittades inte"
 
 #: includes/cpt.php:23
 msgid "Not found in Trash"
-msgstr ""
+msgstr "Hittades inte i papperskorgen"
 
 #: includes/cpt.php:24
 msgid "Featured Image"
-msgstr ""
+msgstr "Utvald bild"
 
 #: includes/cpt.php:25
 msgid "Set featured image"
-msgstr ""
+msgstr "Ställ in utvald bild"
 
 #: includes/cpt.php:26
 msgid "Remove featured image"
-msgstr ""
+msgstr "Ta bort utvald bild"
 
 #: includes/cpt.php:27
 msgid "Use as featured image"
-msgstr ""
+msgstr "Använd som utvald bild"
 
 #: includes/cpt.php:28
 msgid "Insert into event"
-msgstr ""
+msgstr "Infoga i evenemang"
 
 #: includes/cpt.php:29
 msgid "Uploaded to this event"
-msgstr ""
+msgstr "Uppladdad till detta evenemang"
 
 #: includes/cpt.php:30
 msgid "Events list"
-msgstr ""
+msgstr "Evenemangslista"
 
 #: includes/cpt.php:31
 msgid "Events list navigation"
-msgstr ""
+msgstr "Navigering i evenemangslistan"
 
 #: includes/cpt.php:32
 msgid "Filter events list"
-msgstr ""
+msgstr "Filtrera evenemangslistan"
 
 #: includes/cpt.php:36
 msgid "Custom Post Type for Events"
-msgstr ""
+msgstr "Anpassad inläggstyp för evenemang"
 
 #. Plugin Name of the plugin/theme
 msgid "Agenda Core"
-msgstr ""
+msgstr "Agenda Core"
 
 #. Description of the plugin/theme
 msgid "A core plugin for managing agenda's functionalities."
-msgstr ""
+msgstr "En kärnplugin för att hantera agendafunktioner."
 
 #. Author of the plugin/theme
 msgid "Web Development Team"
-msgstr ""
+msgstr "Webbutvecklingsteamet"
