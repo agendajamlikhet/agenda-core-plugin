@@ -39,4 +39,10 @@ add_action('plugins_loaded', 'agenda_core_init');
 function agenda_core_init() {
     // Code to initialize the plugin
 }
+
+function agenda_core_load_textdomain() {
+    load_plugin_textdomain( 'agenda-core', false, dirname( plugin_basename( __FILE__ ) ) . '/language/' );
+}
+add_action( 'plugins_loaded', 'agenda_core_load_textdomain' );
+
 ?>
