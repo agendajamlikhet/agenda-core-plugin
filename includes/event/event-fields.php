@@ -8,7 +8,7 @@ function event_custom_fields()
         'event_schedule',
         __('Event schedule', 'agenda-core'),
         'event_schedule_callback',
-        'event'
+        'events'
     );
 
     // Add meta box for event venue
@@ -16,15 +16,15 @@ function event_custom_fields()
         'event_venue',
         __('Event venue', 'agenda-core'),
         'event_venue_callback',
-        'event'
+        'events'
     );
 
     // Add meta box for event organizer
     add_meta_box(
         'event_organizer',
-        __('Event organizer', 'agenda-core'),
+        __('Event organisation', 'agenda-core'),
         'event_organizer_callback',
-        'event'
+        'events'
     );
 }
 
@@ -113,14 +113,14 @@ function event_organizer_callback($post)
 {
     wp_nonce_field(basename(__FILE__), 'event_organizer_nonce');
     $organizers = get_posts(array(
-        'post_type' => 'organizer',
+        'post_type' => 'organisationer',
         'numberposts' => -1,
     ));
     $event_organizer = get_post_meta($post->ID, 'event_organizer', true);
     ?>
     <div class="wrapper flex gap-3">
         <div class="flex flex-col gap-1">
-            <label for="event_organizer"><?php _e('Select Organizer', 'agenda-core');?></label>
+            <label for="event_organizer"><?php _e('Select Organisation', 'agenda-core');?></label>
             <select name="event_organizer" id="event_organizer">
                 <option value=""><?php _e('Not specified', 'agenda-core');?></option>
                 <?php foreach ($organizers as $organizer): ?>
