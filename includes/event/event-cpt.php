@@ -53,7 +53,10 @@ function create_event_cpt()
         'publicly_queryable' => true,
         'capability_type' => 'post',
         'menu_icon' => 'dashicons-calendar-alt',
+        'rewrite' => [
+            'slug' => __('events', 'agenda-core'),
+        ],
     );
-    register_post_type('events', $args);
+    register_post_type('event', $args);
 
 }
