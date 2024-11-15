@@ -29,6 +29,6 @@ function create_event_city_taxonomy()
         'show_tagcloud' => true,
     );
 
-    register_taxonomy('event_city', array('events'), $args);
+    register_taxonomy('event_city', array('event'), $args);
 }
 add_action('init', 'create_event_city_taxonomy');
