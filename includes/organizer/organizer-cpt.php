@@ -5,21 +5,21 @@ function create_organizer_cpt()
 {
 
     $labels = array(
-        'name' => __('Organisationer', 'Post Type General Name', 'agenda-core'),
+        'name' => __('Organisations', 'Post Type General Name', 'agenda-core'),
         'singular_name' => __('Organisation', 'Post Type Singular Name', 'agenda-core'),
-        'menu_name' => __('Organisationer', 'agenda-core'),
+        'menu_name' => __('Organisations', 'agenda-core'),
         'name_admin_bar' => __('Organisation', 'agenda-core'),
         'archives' => __('Organisation Archives', 'agenda-core'),
         'attributes' => __('Organisation Attributes', 'agenda-core'),
         'parent_item_colon' => __('Parent Organisation:', 'agenda-core'),
-        'all_items' => __('All Organisationer', 'agenda-core'),
+        'all_items' => __('All Organisations', 'agenda-core'),
         'add_new_item' => __('Add New Organisation', 'agenda-core'),
         'add_new' => __('Add New', 'agenda-core'),
         'new_item' => __('New Organisation', 'agenda-core'),
         'edit_item' => __('Edit Organisation', 'agenda-core'),
         'update_item' => __('Update Organisation', 'agenda-core'),
         'view_item' => __('View Organisation', 'agenda-core'),
-        'view_items' => __('View Organisationer', 'agenda-core'),
+        'view_items' => __('View Organisations', 'agenda-core'),
         'search_items' => __('Search Organisation', 'agenda-core'),
         'not_found' => __('Not found', 'agenda-core'),
         'not_found_in_trash' => __('Not found in Trash', 'agenda-core'),
@@ -29,9 +29,9 @@ function create_organizer_cpt()
         'use_featured_image' => __('Use as featured image', 'agenda-core'),
         'insert_into_item' => __('Insert into organisation', 'agenda-core'),
         'uploaded_to_this_item' => __('Uploaded to this organisation', 'agenda-core'),
-        'items_list' => __('Organisationer list', 'agenda-core'),
-        'items_list_navigation' => __('Organisationer list navigation', 'agenda-core'),
-        'filter_items_list' => __('Filter organisationer list', 'agenda-core'),
+        'items_list' => __('Organisations list', 'agenda-core'),
+        'items_list_navigation' => __('Organisations list navigation', 'agenda-core'),
+        'filter_items_list' => __('Filter organisations list', 'agenda-core'),
     );
     $args = array(
         'label' => __('Organisation', 'agenda-core'),
@@ -53,6 +53,9 @@ function create_organizer_cpt()
         'publicly_queryable' => true,
         'capability_type' => 'post',
         'menu_icon' => 'dashicons-groups',
+        'rewrite' => [
+            'slug' => __('organisations', 'agenda-core'),
+        ],
     );
-    register_post_type('organisationer', $args);
+    register_post_type('organisation', $args);
 }
