@@ -8,7 +8,7 @@ function event_custom_fields()
         'event_schedule',
         __('Event schedule', 'agenda-core'),
         'event_schedule_callback',
-        'events'
+        'event'
     );
 
     // Add meta box for event venue
@@ -16,15 +16,15 @@ function event_custom_fields()
         'event_venue',
         __('Event venue', 'agenda-core'),
         'event_venue_callback',
-        'events'
+        'event'
     );
 
     // Add meta box for event organizer
     add_meta_box(
         'event_organizer',
-        __('Event organisation', 'agenda-core'),
+        __('Event organizer', 'agenda-core'),
         'event_organizer_callback',
-        'events'
+        'event'
     );
 }
 
@@ -113,7 +113,7 @@ function event_organizer_callback($post)
 {
     wp_nonce_field(basename(__FILE__), 'event_organizer_nonce');
     $organizers = get_posts(array(
-        'post_type' => 'organisationer',
+        'post_type' => 'organisation',
         'numberposts' => -1,
     ));
     $event_organizer = get_post_meta($post->ID, 'event_organizer', true);
