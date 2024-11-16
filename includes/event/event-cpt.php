@@ -37,7 +37,7 @@ function create_event_cpt()
         'label' => __('Event', 'agenda-core'),
         'description' => __('Custom Post Type for Events', 'agenda-core'),
         'labels' => $labels,
-        'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields'),
+        'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields', 'excerpt'),
         'taxonomies' => array('category', 'post_tag'),
         'hierarchical' => false,
         'public' => true,
@@ -46,12 +46,16 @@ function create_event_cpt()
         'menu_position' => 5,
         'show_in_admin_bar' => true,
         'show_in_nav_menus' => true,
+        'show_in_rest' => true,
         'can_export' => true,
         'has_archive' => true,
         'exclude_from_search' => false,
         'publicly_queryable' => true,
         'capability_type' => 'post',
         'menu_icon' => 'dashicons-calendar-alt',
+        'rewrite' => [
+            'slug' => __('events', 'agenda-core'),
+        ],
     );
     register_post_type('event', $args);
 
